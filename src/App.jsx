@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import "./index.css";
 
 const animais = [
-  { nome: "Cachorro", info: "O cachorro é conhecido como o melhor amigo do homem.", image: "/public/dog.webp" },
-  { nome: "Gato", info: "Os gatos dormem em média 12 a 16 horas por dia.", image: "/public/gato.jpg" },
-  { nome: "Elefante", info: "Os elefantes têm excelente memória e vivem em grupos.", image: "/public/elefante.webp" },
-  { nome: "Tartaruga", info: "Tartarugas podem viver mais de 100 anos.", image: "/public/tartaruga.jpg" },
+  { nome: "Cachorro", info: "O cachorro é conhecido como o melhor amigo do homem.", image: "./public/dog.webp" },
+  { nome: "Gato", info: "Os gatos dormem em média 12 a 16 horas por dia.", image: "./public/gato.jpg" },
+  { nome: "Elefante", info: "Os elefantes têm excelente memória e vivem em grupos.", image: "./public/elefante.webp" },
+  { nome: "Tartaruga", info: "Tartarugas podem viver mais de 100 anos.", image: "./public/tartaruga.jpg" },
 ];
 
 function App() {
