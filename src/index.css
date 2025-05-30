@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url('https://images.unsplash.com/photo-1601758123927-1982a6c85c2e') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  transition: background 0.3s;
+  color: #2f2f2f;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.5s ease;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+.app.invertido {
+  transform: rotateY(180deg);
+}
+
+.botao-fujao {
+  position: absolute;
+  padding: 1rem 2rem;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: top 0.3s, left 0.3s;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.fixo {
+  margin-top: 5rem;
+  padding: 1rem 2rem;
+  background: #6b8e23;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.app.inferno {
+  background: black !important;
+  color: red;
+  animation: tremer 0.1s infinite alternate;
+}
+
+.app.inferno .botao-fujao {
+  background: red;
+  animation: piscar 0.5s infinite;
+}
+
+@keyframes tremer {
+  from {
+    transform: translateX(-2px) translateY(-2px) rotate(-1deg);
+  }
+  to {
+    transform: translateX(2px) translateY(2px) rotate(1deg);
+  }
+}
+
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
